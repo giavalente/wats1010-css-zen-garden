@@ -1,194 +1,264 @@
 /* css Zen Garden default style v1.02 */
 /* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
-
 /* This file based on 'Tranquille' by Dave Shea */
-/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
-/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
 
-
-/* basic elements */
-html {
-	margin: 0;
-	padding: 0;
-	}
-body { 
-	font: 75% helvetica, arial, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(blossoms.jpg) no-repeat bottom right; 
+/*basic elements*/
+* {
 	margin: 0; 
 	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
-
-
-/* specific divs */
-.page-wrapper { 
-	background: url(zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
-
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
-
-header h1 { 
-	background: transparent url(h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
 }
 
+body {
+	font-size: .9em; 
+	font-family: verdana, arial, sans-serif;
+	color: gray;
+	background: white;
+}
+.body:before {
+    opacity: 0.6;
+    background-image: url(eyes.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+h3 {
+	font-family: verdana, sans-serif;
+	font-size: 1.2em;
+	color: #7f95a5;
+}
+
+.page-wrapper {
+	width: 800px; 
+	margin: 0 auto;
+}
+
+a:active {
+  position: relative;
+  top: 1px;
+}
+
+/* header */
+header {
+	background-image: url(banner1.jpg);
+  background-repeat: no-repeat; 
+	width: 800px; 
+	height: 300px;
+}
+header h1 {
+	color: white;
+	font-size: 2em;
+	font-family: verdana, sans-serif;
+	font-weight: bold;
+}
+header h2 {
+	color: white;
+	font-size: 1em;
+	font-family: verdana, sans-serif;
+	font-weight: bold;
+}
 .summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
-	text-align: center;
-	}
+	background: lightblue;	
+	background-position: center bottom;
+}
 
+/*body content*/
+.summary {
+	color: white;	
+}
 .preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
+	width: 800px; 
+	background: white; 
+	padding-bottom:15px;
+	margin-top: 0px;
+	line-height:22px; 
+	text-align:justify;
+	border-radius: 25px
+}
+.preamble h3 {
+	position:relative; 
+	width: 800px; 
+	height: 35px;
+}
 
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
+.supporting {
+	float: left; 
+	width: 75%; 
+	background: white; 
+	line-height: 22px; 
+	text-align: justify;
+	border-radius: 25px;
+}
+.supporting p {
+	padding: 7px 20px;
+}
+.supporting a: link {
+	color: navy; 
+	text-decoration: none; 
+	font-weight: bold; 
+	border-bottom: 1px solid;
+}
+.supporting a: visited {
+	color: navy; 
+	text-decoration: none; 
+	border: 0;
+}
+.supporting a:hover{
+	border-bottom: 1px solid navy;
+}
+
+.explanation {
+	background: white;
+}
+
+.participation {
+	background: white;
+}
+
+.requirements {
+	background: white;
+}
+
+.requirements p: nth-child(6) {
+	margin-bottom: 0; 
+	padding-bottom: 14px;
+}
+
+footer {
+	position: relative; 
+	font-size: 14px; 
+	text-align: center;
+	background: lightgray; 
+	width: 100%; 
+	height: 35px; 
+	padding-top: 63px;
+}
+footer a: link {
+	color: green; 
+	font-weight: bolder; 
+	text-decoration: none; 
+	border: 0;
+}
+footer a: visited {
+	color: #7f95a5; 
+	font-weight: bolder;
+}
+footer a: hover {
+	color: #7f95a5; 
+	border: 0;
+}
 
 .sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-
-
+	float: right; 
+	background: #afc8db;
+	width: 200px; 
+	color: gray;
+	font-size: .9em;
+	border-radius: 25px;
+}
 .sidebar ul {
-	margin: 0;
-	padding: 0;
-	}
-.sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
 	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
+}
 
+.design-selection a: link {
+	display: block;
+	color: lightblue; 
+	text-decoration: none; 
+	font-weight: bolder; 
+	border-bottom: 1px solid #ddd;
+}
+.design-selection a: visited {
+	display: block; 
+	color: #7f95a5;
+	text-decoration: none; 
+	border-bottom: 1px solid #b1b1b1;
+}
+.design-selection a: hover {
+	color: #7f95a5;
+}
+.design-selection a.designer-name:link {
+	display: inline; 
+	color: #7f95a5; 
+	text-decoration: none; 
+	font-style: italic; 
+	margin-left: 5px; 
+	border: 0;
+}
 
-.extra1 {
-	background: transparent url(cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}
+.design-selection a.designer-name: visited {
+	display: inline; 
+	color: #7f95a5; 
+	font-weight: normal; 
+	text-decoration: none; 
+	border: 0;
+}
+.design-selection a.designer-name:hover{
+	color: #949494;
+}
+
+.sidebar .wrapper li {
+	padding: 0 20px;
+}
+.sidebar .wrapper {
+	padding-bottom: 10px; 
+	padding-bottom: 119px;
+}
+
+.design-selection h3 {
+	position: relative;  
+	width: 195px; 
+	height: 60px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+.design-selection ul {
+	padding-top: 8px;
+}
+.design-selection li {
+	padding-bottom: 10px;
+}
+
+.design-archives h3 {
+	position:relative; 
+	width: 195px; 
+	height: 30px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.zen-resources h3 {
+	position: relative; 
+	width:195px; 
+	height:30px;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+.design-archives ul, .zen-resources ul {
+	padding-top:8px;
+}
+.design-archives ul li, .zen-resources ul li {
+	padding-bottom:8px;
+}
+
+.design-archives a:link, .zen-resources a:link {
+	color: #7f95a5; 
+	text-decoration: none; 
+	font-weight: bolder;
+}
+.design-archives a: visited, .zen-resources a: visited {
+	color: #7f95a5;
+	text-decoration: none;
+}
+.design-archives a:hover, .zen-resources a:hover {
+	color: #949494; 
+	font-style: italic;
+}
